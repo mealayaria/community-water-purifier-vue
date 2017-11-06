@@ -1,6 +1,6 @@
 <template>
 <div id="login-container">
-  <img src="../assets/logo.png">
+  <img src="../../assets/logo.png">
   <h2>小区净水管理系统</h2>
   <el-form class="login-form" :model="loginForm"> 
     <el-form-item> 

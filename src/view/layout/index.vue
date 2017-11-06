@@ -1,7 +1,7 @@
 <template>
 <div class="app-wrapper">
   <el-container>
-    <el-aside width="20vh">
+    <el-aside width="15vw">
       <sidebar></sidebar>
      </el-aside>
     <el-container>
@@ -9,7 +9,7 @@
         <nav-menu></nav-menu>
       </el-header>
       <el-main><div></div></el-main>
-      <!-- <el-footer>Footer</el-footer> -->
+      <el-footer>Footer</el-footer>
     </el-container>
   </el-container>
 </div>
@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import NavMenu from '@/components/NavMenu'
-import Sidebar from '@/components/Sidebar'
+import NavMenu from './NavMenu'
+import Sidebar from './Sidebar'
 export default {
   name: 'layout',
   components: {
@@ -42,10 +42,11 @@ export default {
 .app-wrapper {
   display: -webkit-flex;
   display: flex;
-  flex: auto
+  flex: auto;
+  min-height: 98vh;
 }
 .main-container {
-  margin-left: 200px;
+  /* margin-left: 15vw; */
   top: 0;
   bottom: 0;
   overflow-y: auto;
