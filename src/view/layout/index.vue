@@ -8,7 +8,7 @@
       <el-header>
         <nav-menu></nav-menu>
       </el-header>
-      <el-main><div></div></el-main>
+      <el-main><app-content></app-content></el-main>
       <el-footer>Footer</el-footer>
     </el-container>
   </el-container>
@@ -24,11 +24,13 @@
 <script>
 import NavMenu from './NavMenu'
 import Sidebar from './Sidebar'
+import AppContent from './AppContent'
 export default {
   name: 'layout',
   components: {
     NavMenu,
-    Sidebar
+    Sidebar,
+    AppContent
   },
   data () {
     return {
@@ -40,7 +42,6 @@ export default {
 
 <style>
 .app-wrapper {
-  display: -webkit-flex;
   display: flex;
   flex: auto;
   min-height: 98vh;
