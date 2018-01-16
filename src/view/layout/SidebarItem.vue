@@ -8,7 +8,7 @@
             <span>{{item.name}}</span>
           </template>
           <template v-for="child in item.children">
-            <el-menu-item :index="item.path + '/' + child.path" :key="child.name">
+            <el-menu-item :index="item.path + child.path" :key="child.name">
               <template slot="title">
                 <i class="el-icon-menu"><span>{{child.name}}</span></i>
               </template>
