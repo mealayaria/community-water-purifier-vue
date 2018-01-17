@@ -1,7 +1,7 @@
 <template>
   <div class="water-input">
-    <el-form :model="inputForm" label-position="right" label-width="80px">
-      <el-col :span="8">
+    <el-col :span="10">
+      <el-form :model="inputForm" label-position="left" label-width="120px">
         <el-form-item label="机器名称">
           <el-cascader :options="options" :props="props" ></el-cascader>
         </el-form-item>
@@ -20,9 +20,11 @@
         <el-form-item>
           <el-button type="primary" @click="onSubmit">提交</el-button>
         </el-form-item>
-      </el-col>
-    </el-form>
-    <compare-table></compare-table>
+      </el-form>
+    </el-col>
+    <el-col :span="14">
+      <compare-table :lastRecord="lastRecord" :currentRecord="currentRecord"></compare-table>
+    </el-col>
     <!-- <el-table data="">
       <el-table-column prop="" label=""></el-table-column>
       <el-table-column prop="machineId" label="机器名称"></el-table-column>
@@ -55,7 +57,11 @@
         options: [],
         props: null,
         lastRecord: {
-
+          coins: 200,
+          card: 100,
+          water: 20.8,
+          power: 30.2,
+          time: new Date()
         },
         currentRecord: {
 
@@ -64,7 +70,13 @@
     },
     methods: {
       onSubmit () {
-
+        this.currentRecord = {
+          coins: 200,
+          card: 100,
+          water: 20.8,
+          power: 30.2,
+          time: new Date()
+        }
       }
     }
   }

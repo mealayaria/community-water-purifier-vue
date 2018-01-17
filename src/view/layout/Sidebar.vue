@@ -11,7 +11,8 @@
         <el-menu-item index="/water/input">数据输入</el-menu-item>
         <el-menu-item index="/water/query">数据查询</el-menu-item>
       </el-submenu>
-      <!-- <el-menu-item index="3" :route="path"><template slot="title"><i class="el-icon-menu"></i><span>数据输入</span></template></el-menu-item> -->
+      <el-menu-item index="/machine"><template slot="title"><i class="el-icon-menu"></i><span>设备管理</span></template></el-menu-item>
+      <el-menu-item index="/address"><template slot="title"><i class="el-icon-menu"></i><span>小区管理</span></template></el-menu-item>
       <!-- <el-menu-item index="4" route="{path:'input1'}"><i class="el-icon-setting"></i><span slot="title">数据查询</span></el-menu-item> -->
   </el-menu>
 <!-- </div> -->
